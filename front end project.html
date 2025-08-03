@@ -1,0 +1,191 @@
+
+          <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hope Foundation</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      scroll-behavior: smooth;
+      margin: 0;
+      padding: 0;
+    }
+    .hero {
+      background: #5cbdb9;
+      color: white;
+      padding: 80px 20px 30px;
+      text-align: center;
+    }
+    .footer {
+      background: #343a40;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    .section {
+      display: none;
+    }
+    .active-section {
+      display: block !important;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <a class="navbar-brand" href="#">
+      <img src="c:\Users\MANISHA\OneDrive\Desktop\triveni\images\hope logo.jpg" width="40" height="40" class="d-inline-block align-top rounded-circle" alt="Logo" />
+      Hope Foundation
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navLinks">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#" onclick="showSection('home')">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" onclick="showSection('about')">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" onclick="showSection('form')">Volunteer</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="section active-section hero">
+    <div class="container-fluid">
+      <h1>Welcome to Hope Foundation</h1>
+      <p>Empowering lives through care, education, and support.</p>
+
+      <div id="carouselExample" class="carousel slide mt-4" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="c:\Users\MANISHA\OneDrive\Desktop\triveni\images\hope foundation5.jpg" width="800" height="500" class="img-fluid" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="c:\Users\MANISHA\OneDrive\Desktop\triveni\images\hope foundation4.jpg" width="800" height="500" class="img-fluid" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="c:\Users\MANISHA\OneDrive\Desktop\triveni\images\hope foundation3.jpg" width="800" height="500" class="img-fluid" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about" class="section py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">About Us</h2>
+      <p>
+        Hope Foundation is a non-profit organization committed to creating positive change in underprivileged communities.
+        We work on education, health, and women empowerment with the help of local volunteers. Our ‘Cradle to Career’ approach focuses on transforming lives where we walk alongside an individual on the entire journey – through childhood education and care towards skill training and livelihood as an adult.
+      </p>
+      <p>
+        We work with government schools nationwide and strive for holistic development by harnessing the power of teachers, technology, training, and extracurricular activities. Our medical teams serve in remote locations, while our education programs support over 250,000 children annually.
+      </p>
+      <h1>EDUCATION</h1>
+      <br><br>
+      <p>Over 2,50,000 children are getting ready for a better future at HOPE foundation‘s schools, non-formal education programs and tuition centre’s. Most of our students come from economically disadvantaged families with no easy access to quality education.
+
+Our education support program, Cradle to Career, ensures that a child completes her education, is in good health and has a choice between higher studies or a vocation after school. The program runs in seven places where over 2,500 children are on their way to finishing school.
+
+The support of our corporate partners allows us to train, and place young men and women in Artificial Intelligence, Data Analytics, Cloud Computing, Computer Applications, plumbing, masonry, electrical work, tailoring, and weaving.</p>
+
+      <h3 class="mt-4">Programmes</h3>
+      <ul>
+        <li>HOPE Foundation Matriculation School, Tannery Road</li>
+        <li>HOPE Foundation School, Ashapura Nagar, Bhuj</li>
+        <li>HOPE Foundation Matriculation School, Kannagi Nagar</li>
+        <li>SAMSUNG School of HOPE, Chinnangudi</li>
+        <li>HOPE Foundation Matriculation School, Tharangambadi</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Volunteer Form Section -->
+  <section id="form" class="section py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Volunteer With Us</h2>
+      <form>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="name">Full Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="phone">Phone Number</label>
+            <input type="tel" class="form-control" id="phone" placeholder="Your Phone Number">
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="age">Age</label>
+            <input type="number" class="form-control" id="age" min="18" placeholder="Your Age">
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="gender">Gender</label>
+            <select class="form-control" id="gender">
+              <option value="" disabled selected>Select Gender</option>
+              <option>Male</option>
+              <option>Female</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="col-12 mb-3">
+            <label for="address">Address</label>
+            <textarea class="form-control" id="address" rows="2" placeholder="Your Full Address"></textarea>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="availability">Availability (Days/Hours)</label>
+            <input type="text" class="form-control" id="availability" placeholder="e.g., Weekends, Evenings">
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="skills">Your Skills</label>
+            <input type="text" class="form-control" id="skills" placeholder="e.g., Teaching, Fundraising">
+          </div>
+          <div class="col-12 mb-3">
+            <label for="why">Why do you want to volunteer?</label>
+            <textarea class="form-control" id="why" rows="3" placeholder="Tell us why you're interested"></textarea>
+          </div>
+          <div class="col-12 mb-3">
+            <label for="resume">Upload ID proof(Optional)</label>
+            <input type="file" class="form-control-file" id="resume">
+          </div>
+          <div class="col-12 text-center">
+            <button type="submit" class="btn btn-primary px-5">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Hope Foundation. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Toggle Script -->
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('.section').forEach(s => s.classList.remove('active-section'));
+      document.getElementById(id).classList.add('active-section');
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
